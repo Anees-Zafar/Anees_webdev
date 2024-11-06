@@ -104,7 +104,7 @@ function Hero() {
 
 
           <div className="box2">
-            <img className="box2myimg" src="/images/myimage.png" alt="" />
+            <img className="box2myimg" src={process.env.BASE_URL + "images/myimage.png"} alt="" />
 
             {/* pulse button  */}
             <div className='absolute right-9 top-[200px] '>
