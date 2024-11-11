@@ -1,42 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Hero from './components/hero'
+// App.js
+import React, { useRef, useEffect } from 'react';
+import { useState } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
-import Animatedcursor from './components/Animatedcursor'
-import Marquee from './components/Marquee'
-import Technologies from './components/Technologies'
-import About from './components/About'
-import Parallex from './components/Parallex'
-import Experiences from './components/Experiences'
-import { HoverImageLinks } from './components/Linkstechnologies'
-import PortfolioSection from './components/Portfoliosection'
-import Footerform from './components/Footerform'
-import Footer from './components/Bottomfooter'
-import Aboutme from './components/aboutme'
+import { motion, useScroll, useTransform } from "framer-motion";
+import Animatedcursor from './components/Animatedcursor';
+import Hero from './components/Hero';
+import About from './components/About';
+import Parallex from './components/Parallex';
+import Experiences from './components/Experiences';
+import PortfolioSection from './components/PortfolioSection';
+import Footerform from './components/Footerform';
+import Footer from './components/Bottomfooter';
+import Aboutme from './components/aboutme';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const locomotiveScroll = new LocomotiveScroll();
-  return (
-    <>
-      <Animatedcursor/>
-      <Hero />
-       <About/>
-      <Experiences/>
-      <Parallex/>
-      <Aboutme/>
-      {/* <HoverImageLinks/> */}
-        {/* technologies sectio starts  */}
-        {/* <Marquee/>   */}
+  const [count, setCount] = useState(0);
+  const scrollRef = useRef(null);
 
-        <PortfolioSection/>
-          <Footerform/>
-      <Footer/>
-    
-    </>
-  )
+  useEffect(() => {
+    const scrollInstance = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+      multiplier: 0.8, // adjust scroll speed
+      lerp: 0.1, // smoothness
+    });
+
+    return () => {
+      scrollInstance.destroy();
+    };
+  }, []);
+
+  return (
+    <div ref={scrollRef}>
+      <Animatedcursor />
+      <Hero />
+      <About />
+      <Experiences />
+      <Parallex />
+      <Aboutme/>
+      <PortfolioSection />
+      <Footerform />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

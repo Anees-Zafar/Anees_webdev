@@ -224,7 +224,6 @@
     width: 33vw;
   }
 
-  .socialicons {}
 
   .flexbox {
     flex-direction: column;
@@ -257,6 +256,7 @@
     position: absolute;
     bottom: -0;
     right: 1%;
+    
   }
 
   .rotateimgs {
@@ -421,7 +421,7 @@
 
   .experience {
     flex-direction: column;
-    height: 200vh;
+    height: 150vh;
     padding-top: 0px;
   }
 
@@ -494,7 +494,7 @@
 }
 
 .mountains {
-  background-image: url(/images/mountains.png);
+  background-image: url(images/mountains.png);
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -504,7 +504,7 @@
 }
 
 .planets {
-  background-image: url(/images/planets.png);
+  background-image: url(images/planets.png);
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -514,7 +514,7 @@
 }
 
 .stars {
-  background-image: url(/images/stars.png);
+  background-image: url(images/stars.png);
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -701,7 +701,7 @@
   .textparallex {
     font-size: 70px;
     color: white;
-    z-index: 3;
+    
   }
 
   .parallex {
@@ -732,7 +732,7 @@
   .planets {
     background-image: url(images/planets.png);
     background-position: right;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
