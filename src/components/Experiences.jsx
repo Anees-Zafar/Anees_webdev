@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 function Experiences() {
   return (
     <div>
-      <div className="experience w-full gap-7 h-[100vh] bg-black p-10 flex justify-center items-center">
+      <div className="experience w-full gap-7 h-[120vh] bg-black p-10 flex justify-center items-center">
 
         <div className="experienceleft w-[30vw]  relative h-[500px] pr-2 ">
           <motion.h1
@@ -21,7 +21,7 @@ function Experiences() {
             <ButtonWrapper className="mt-5" />
           </div>
           <div className="experienceimg float-right absolute bottom-0 right-5" data-scroll data-scroll-speed=".3">
-            <img className='w-[300px] opacity-[0.5] z-[-2]' src="/images/services.png" alt="" />
+            <img className='w-[300px] opacity-[0.5] z-[-2]' src="images/services.png" alt="" />
           </div>
         </div>
         <div className="experienceright w-[40vw] ">
@@ -35,7 +35,7 @@ function Experiences() {
               <span className='text-[#ffd630] -mt-2 tracking-[0.5px] font-thin font-[font4] text-[12px] uppercase'>
                 &nbsp;&nbsp;Dtek Solutions
               </span></p>
-            <span className='absolute top-4 right-2 text-white text-sm'>
+            <span className='absolute expdate top-4 right-2 text-white text-sm'>
               2022 - 2023
             </span>
             <p className='text-zinc-300 leading-5 mt-1  text-md'>I worked on both CMS and front-end development
@@ -57,7 +57,7 @@ function Experiences() {
               <span className='text-[#ffd630] -mt-2 tracking-[0.5px] font-thin font-[font4] text-[12px] uppercase'>
                 &nbsp;&nbsp;Career Institute
               </span></p>
-            <span className='absolute top-4 right-2 text-white text-sm'>
+            <span className='absolute expdate top-4 right-2 text-white text-sm'>
               2023 - 2024
             </span>
             <p className='text-zinc-300 leading-5 mt-1  text-md'>I have been working remotely with Career Institute
@@ -79,7 +79,7 @@ function Experiences() {
               <span className='text-[#ffd630] -mt-2 tracking-[0.5px] font-thin font-[font4] text-[12px] uppercase'>
                 &nbsp;&nbsp;Tech Hub IT Company
               </span></p>
-            <span className='absolute top-4 right-2 text-white text-sm'>
+            <span className='absolute expdate top-4 right-2 text-white text-sm'>
               2022 - 2023
             </span>
             <p className='text-zinc-300 leading-5 mt-1  text-md'> I am currently enrolled in a web development course at Tech Hub, focusing on front-end development. This program is enhancing my skills in HTML, CSS, JavaScript, and responsive design principles to create modern, user-friendly websites.
@@ -91,7 +91,7 @@ function Experiences() {
           <motion.div
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.4, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             className='py-3 relative'>
 
             <p className='text-zinc-300 leading-5 mt-1  text-md'>

@@ -64,7 +64,7 @@ function Hero() {
         mouseMoving(e)
       }}>
         <ParticlesBackground />
-        <div className="flexbox " data-scroll data-scroll-speed="-.3">
+        <div className="flexbox  " data-scroll data-scroll-speed="-.3">
           <div className="box1 pl-[60px] pt-[200px] pr-[100px]">
             <div id='tilttitlediv' ref={tiltref}>
               <motion.h1
@@ -73,20 +73,7 @@ function Hero() {
                 initial="hidden"
                 animate="visible"
                 className="herotitle font-[font11]  "><span className='text-zinc-100'>Hi, I'M ANEES</span><span className='text-[#ffd630] darkmode   '>. </span> </motion.h1>
-              {/* <div className='flex items-center'> */}
-              {/* <motion.img initial={{ width: 0 }}
-                animate={{ width: '8vw' }}
-                transition={{ ease: [0.76, 0, 0.24, 1], duration: 2, delay: 2 }}
-                className='animatedimg' src="/images/Capture123445.PNG" alt="" />  */}
-              {/* <motion.h1
-                 variants={container3(1)}
-                  initial="hidden"
-                  animate="visible"
-                   className="herotitle1 font-[font4] text-zinc-100">I am <span className="text-[#ffd630] font-semibold">{text2}</span>
-                    </motion.h1></div> */}
-              {/* <motion.h1 variants={container3(1.5)}
-                initial="hidden"
-                animate="visible" className="herotitle1 font-[font1] text-zinc-100"></motion.h1> */}
+        
             </div>
             <motion.p
               variants={container3(1)}
@@ -104,10 +91,10 @@ function Hero() {
 
 
           <div className="box2">
-            <img className="box2myimg" src={process.env.BASE_URL + "images/myimage.png"} alt="" />
+            <img className="box2myimg" src="images/myimage.png" alt="" />
 
             {/* pulse button  */}
-            <div className='absolute right-9 top-[200px] '>
+            <div className='absolute pingbtn right-9  '>
               <div className='pulse' >
                 <span style={{ "--i": 0 }}></span>
                 <span style={{ "--i": 1 }}></span>
@@ -137,13 +124,13 @@ function Hero() {
             className=" heromarqee flex   whitespace-nowrap absolute bottom-2"
           >
             <hr />
-            <h1 className="marqueetext text-[10vw] text-zinc-800  font-[font1] uppercase mx-4">
+            <h1 className="marqueetext text-[10vw] text-zinc-700  font-[font1] uppercase mx-4">
               Crafting innovative experiences
             </h1>
-            <h1 className="marqueetext text-[10vw] text-zinc-800 font-[font1] uppercase mx-4">
+            <h1 className="marqueetext text-[10vw] text-zinc-700 font-[font1] uppercase mx-4">
               Crafting innovative experiences
             </h1>
-            <h1 className="marqueetext text-[10vw] text-zinc-800 font-[font1] uppercase mx-4">
+            <h1 className="marqueetext text-[10vw] text-zinc-700 font-[font1] uppercase mx-4">
               Crafting innovative experiences
             </h1>
             <hr />

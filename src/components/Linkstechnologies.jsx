@@ -4,37 +4,38 @@ import { FiArrowRight } from "react-icons/fi";
 
 export const HoverImageLinks = () => {
   return (
-    <section className="bg-black p-4 overflow-y-visible w-[100vw]   ">
+    <section className="bg-black p-4 overflow-y-visible w-[100vw]  ">
       <div className="mx-auto max-w-5xl">
         <Link
           heading="Django"
           subheading="Master Web Development with Django"
-          imgSrc="/images/dryfruitproduct.jpg"
-          href="#"
+          imgSrc="https://www.svgrepo.com/show/353657/django-icon.svg"
+        
+          
         />
         <Link
           heading="React"
           subheading="Building User Interfaces with React"
-          imgSrc="/images/fresh foods.jpg"
-          href="#"
+          imgSrc="https://cdn3d.iconscout.com/3d/free/thumb/free-react-3d-icon-download-in-png-blend-fbx-gltf-file-formats--facebook-logo-native-javascript-library-user-interfaces-coding-lang-pack-logos-icons-7578010.png"
+        
         />
         <Link
           heading="Javascript"
           subheading="The Language of the Web"
-          imgSrc="/images/Handi crafts.jpg"
-          href="#"
+          imgSrc=  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZW_tIvYGUNtCoiiZE1A522dQjkkknrSzLF302F-1CpZlfsES6UxemA0swGxKbsWufsE&usqp=CAU"
+
         />
         <Link
           heading="Wordpress"
           subheading="Create Stunning Websites with Ease"
-          imgSrc="/images/kitchenutensils.jpg"
-          href="#"
+          imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfFerAPKHNF2p6JpXDFQpLpfz1IpjPM2UP_A&s"
+         
         />
         <Link
           heading="Shopify"
           subheading="Your E-commerce Solution Made Simple"
-          imgSrc="/images/naturalhoney.jpg"
-          href="#"
+          imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ58f__Hs5QwGWIEcsawDwW1o5IQzaYNPONhQ&s"
+          
         />
       </div>
     </section>
@@ -76,7 +77,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       onMouseMove={handleMouseMove}
       initial="initial"
       whileHover="whileHover"
-      className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-1 transition-colors duration-500 hover:border-neutral-50 md:py-4"
+      className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-5 transition-colors duration-500 hover:border-neutral-50 md:py-4"
     >
       <div>
         <motion.span
@@ -89,7 +90,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-3xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-5xl"
+          className="relative z-10 linkstechhead block text-3xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-5xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -123,7 +124,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         }}
         transition={{ type: "spring" }}
         src={imgSrc}
-        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
+        className="absolute z-0  w-[10vw] rounded-lg object-cover md:w-[9vw] "
         alt={`Image representing a link for ${heading}`}
       />
 

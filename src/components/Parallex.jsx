@@ -23,14 +23,14 @@ function Parallex() {
       renderImageBuffer={50}
       rotationRange={25}
       images={[
-        "/images/zafran123.jpg",
-        "/images/riceproduct.jpg",
-        "/images/pink-salt.jpg",
-        "/images/naturalhoney.jpg",
-        "/images/kitchenutensils.jpg",
-        "/images/Handi crafts.jpg",
-        "/images/dryfruitproduct.jpg",
-        "/images/fresh foods.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU8iaVaHueCLdIzkbc5wfz7EeSWOsNwH2ohw&s",
+        "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZW_tIvYGUNtCoiiZE1A522dQjkkknrSzLF302F-1CpZlfsES6UxemA0swGxKbsWufsE&usqp=CAU",
+        "https://www.svgrepo.com/show/353657/django-icon.svg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqf-Kqyd8dSvhhufDguf9CsTZStGVsoSQ5dg&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZJO5Mzx2UTpGe9bLql69k1QjgP8ejfC8CA&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ58f__Hs5QwGWIEcsawDwW1o5IQzaYNPONhQ&s",
+        "https://i.pinimg.com/736x/fc/9b/4d/fc9b4d4d43c92322dff53c160295320f.jpg",
         "/images/globe-web.jpg",
 // /    "/imgs/active/10.jpg",
 //         "/imgs/active/11.jpg",
@@ -160,7 +160,7 @@ const MouseImageTrail = ({
 
       {images.map((img, index) => (
         <img
-          className="pointer-events-none absolute left-0 top-0 h-48 w-auto rounded-xl border-2 border-black bg-neutral-900 object-cover opacity-0"
+          className="pointer-events-none absolute left-0 top-0 h-24 w-auto rounded-xl border-2 border-black bg-neutral-900 object-cover opacity-0"
           src={img}
           alt={`Mouse move image ${index}`}
           key={index}

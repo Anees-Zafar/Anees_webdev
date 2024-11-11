@@ -20,7 +20,7 @@ function About() {
     const responsive = {
         desktop: { breakpoint: { max: 3000, min: 1024 }, items: 4, slidesToSlide: 1 },
         tablet: { breakpoint: { max: 1024, min: 464 }, items: 2, slidesToSlide: 2 },
-        mobile: { breakpoint: { max: 464, min: 0 }, items: 1, slidesToSlide: 1 }
+        mobile: { breakpoint: { max: 464, min: 0 }, items: 2, slidesToSlide: 1 }
     };
 
     return (
@@ -39,27 +39,27 @@ function About() {
          </div>
 
 
-        <div className='flex gap-2 w-full   justify-center  items-center h-[100vh] bg-black relative '>
+        <div className='flex gap-2 w-full aboutsectionmain   justify-center  items-center h-[100vh] bg-black relative '>
             
-            <div className='w-[35vw] pl-3  h-[80vh] pr-10 border-l-[1px] border-solid border-[#f3c4079d]' data-scroll data-scroll-speed=".3">
+            <div className='w-[35vw] pl-3 abconsec  h-[80vh] pr-10 border-l-[1px] border-solid border-[#f3c4079d]' data-scroll data-scroll-speed=".3">
                 <BubbleText/>
                 <motion.p
                 whileInView={{opacity:1 , x:0}}
                 initial={{opacity:0 }}
                 transition={{duration:0.2 , delay:0.1}}
-                 className='text-[#ffd630] text-[12px]  font-[font7] aboutheding2 '>Your Web Development Partner</motion.p>
+                 className='text-[#ffd630] text-[12px]  font-[font7] aboutheding2 absubheading '>Your Web Development Partner</motion.p>
 
 
                 <motion.h1 
                whileInView={{opacity:1 , y:0}}
                initial={{opacity:0 , y:50 }}
                transition={{duration:0.2 , delay:0.2}}
-                 className='flex  text-3xl aboutheding2 text-white mt-10 font-[font4]'>  Hi <img src={Hand} width="35px" alt="waving hand" />, I'm &nbsp; Anees Zafar</motion.h1>
+                 className='flex  text-3xl aboutheding2 text-white mt-10 font-[font4] absubheading2'>  Hi <img src={Hand} width="35px" alt="waving hand" />, I'm &nbsp; Anees Zafar</motion.h1>
                 <motion.p 
                  whileInView={{opacity:1 , y:0}}
                  initial={{opacity:0 , y:50 }}
                  transition={{duration:0.4 , delay:0.4}}
-                className='text-zinc-300 leading-6 mt-4  text-md'>
+                className='text-zinc-300 leading-6 mt-4  text-md absubheading3'>
                     I'm a passionate web developer dedicated to building functional, user-friendly, and visually
                      appealing web applications. With expertise in both front-end and back-end development,
                       I bring a versatile skill set to every project. I strive to stay up-to-date with the 
@@ -70,8 +70,8 @@ function About() {
             </div>
             <div 
        
-            className='w-[35vw] h-[80vh] relative  p-0 ' data-scroll data-scroll-speed="-.1">
-                <Lottie  className='mt-[-60px]' style={{ width: '40vw' }} animationData={Aboutlottie} />
+            className='w-[35vw] h-[80vh] relative ablosec  p-0 ' data-scroll data-scroll-speed="-.1">
+                <Lottie  className='mt-[-60px] lotiabout w-[40vw] '  animationData={Aboutlottie} />
 
                 <Carousel
                     className='careousel w-[450px]  mt-2 ml-[50px] '

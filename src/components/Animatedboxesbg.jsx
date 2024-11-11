@@ -14,7 +14,7 @@ const BoxGridanimated = () => {
     };
     return (
         <>
-            <div className='w-[100vw] h-[100vh] relative '>
+            <div className='w-[100vw] h-[100vh] relative pt-10 boxanimationdiv '>
                 <div className="box-gridanimated absolute  ">
                     {boxArray.map((_, index) => (
                         <div key={index}
@@ -39,7 +39,7 @@ const BoxGridanimated = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             initial={{ opacity: 0, y: 50 }}
                             transition={{ duration: 0.2, delay: 0.4 }}
-                            className=" text-4xl text-white md:text-6xl font-[font4] font-semibold">
+                            className=" boxbganiheading text-4xl text-white md:text-6xl font-[font4] font-semibold">
                             Transforming Ideas into Powerful Websites
                         </motion.h3>
                         <motion.p
@@ -183,7 +183,7 @@ const ShuffleGrid = () => {
     };
 
     return (
-        <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
+        <div className="grid grid-cols-4 grid-rows-4 md:h-[450px] h-[250px] gap-1">
             {squares.map((sq) => sq)}
         </div>
     );

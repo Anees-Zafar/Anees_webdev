@@ -7,22 +7,26 @@
   position: fixed;
   top: 0;
   z-index: 4;
-  background: transparent; /* Change as needed */
+  background: transparent;
+  /* Change as needed */
   transition: all 0.3s ease, background-color 0.4s ease;
 }
 
 .navbarhead.scrolled {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.349)); /* Gradient background */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.349));
+  /* Gradient background */
 }
 
 .hidden {
   top: -150px;
-  transition: all 0.3s ease /* Hide navbar by moving it up */
+  transition: all 0.3s ease
+    /* Hide navbar by moving it up */
 }
 
 .visible {
   top: 0;
-  transition: all 0.3s ease /* Show navbar */
+  transition: all 0.3s ease
+    /* Show navbar */
 }
 
 
@@ -40,8 +44,8 @@
 }
 
 
-.hero-section{
-  background-image: url(/images/bgimggradient.jpg) ;
+.hero-section {
+  background-image: url(/images/bgimggradient.jpg);
   background-color: rgba(0, 0, 0, 0.596);
   background-blend-mode: darken;
   height: 100vh;
@@ -53,8 +57,9 @@
   overflow: hidden;
   position: relative;
 }
-.flexbox{
-  width:100% !important;
+
+.flexbox {
+  width: 100% !important;
   position: relative;
   height: 100vh;
   display: flex;
@@ -65,7 +70,9 @@
 }
 
 
-.box1{
+
+
+.box1 {
   width: 50vw;
   position: relative;
   height: 100vh;
@@ -74,38 +81,44 @@
 }
 
 .darkmode {
- /* Adjust size as needed */
-  color: transparent; /* Make text transparent */
-  background: linear-gradient(180deg, #f3c307 , #f3c307); 
-  -webkit-background-clip: text; /* Clip background to text */
-  background-clip: text; /* Clip background to text */
-  position: relative; /* Position for inner glow */
+  /* Adjust size as needed */
+  color: transparent;
+  /* Make text transparent */
+  background: linear-gradient(180deg, #f3c307, #f3c307);
+  -webkit-background-clip: text;
+  /* Clip background to text */
+  background-clip: text;
+  /* Clip background to text */
+  position: relative;
+  /* Position for inner glow */
 }
 
-.darkmode::before {
+/* .darkmode::before {
   content: ""; /* Create a pseudo-element */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: inherit; /* Use the same gradient */
-  filter: blur(8px); /* Apply blur for glow effect */
-  z-index: -1; /* Place behind text */
-}
-.herotitle{
-  font-size:5vw ;
+
+.herotitle {
+  font-size: 5vw;
   /* color: white; */
   line-height: 5vw;
 
 }
 
-.herotitle1{
-  font-size:3.3vw ;
+.herotitlegarentee {
+  font-size: 4vw;
+  text-transform: uppercase;
+  /* color: white; */
+  line-height: 4vw;
+
+
+}
+
+.herotitle1 {
+  font-size: 3.3vw;
   line-height: 6vw;
   text-transform: uppercase;
   position: relative;
 }
+
 /* .supele{
   margin-top: -26px!important;
   margin-left: 5px;
@@ -114,13 +127,13 @@
   position: absolute;
   /* color: white; */
 
-.animatedimg{
+/* .animatedimg{
   width: 8vw;
   height: 13vh;
   margin-top: 13px;
   margin-right: 5px;
   border-radius: 10px;
-}
+} */
 /* .typewritter{
   position: absolute;
   bottom: 30px;
@@ -129,40 +142,52 @@
   position: absolute;
   bottom: 10px;
 } */
-.box2{
+.box2 {
   width: 50vw;
-  height:100vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
-.box2myimg{
-  width:77%;
+
+.box2myimg {
+  width: 77%;
   max-width: 600px;
   position: absolute;
   bottom: -0;
-  right:17%;
+  right: 17%;
 }
-.rotateimgs{
+
+.rotateimgs {
   position: absolute;
   bottom: 50px;
   right: 40px;
 }
-.rotateimg1{
+
+.rotateimg1 {
   border-radius: 50%;
-  animation: rotate 5s linear infinite; /* Rotate continuously */
-  
+  animation: rotate 5s linear infinite;
+  /* Rotate continuously */
+
 }
+
+.pingbtn {
+  top: 270px;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(-360deg);
   }
 }
-.rotateimg2{
+
+.rotateimg2 {
   border-radius: 50%;
-  animation: rotate 5s linear infinite; /* Rotate continuously */
+  animation: rotate 5s linear infinite;
+  /* Rotate continuously */
   border: 1px solid white;
 }
 
@@ -170,8 +195,259 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+.heromarqee {
+  z-index: -3;
+  bottom: 5;
+  line-height: 110px;
+  opacity: 0.5;
+}
+
+
+
+@media (max-width: 640px) {
+  .navbarhead {
+
+
+    height: 70px;
+    position: fixed;
+
+  }
+
+  .logoimg {
+    width: 33vw;
+  }
+
+  .socialicons {}
+
+  .flexbox {
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+  }
+
+  .box1 {
+    position: absolute;
+    top: -70px;
+    width: 90vw;
+    padding-left: 10px;
+    padding-right: 0;
+
+    z-index: 9;
+  }
+
+  .box2 {
+    position: absolute;
+    width: 100vw;
+    /* position: relative; */
+    /* overflow: hidden; */
+    z-index: 10;
+  }
+
+  .box2myimg {
+    width: 100vw;
+    position: absolute;
+    bottom: -0;
+    right: 1%;
+  }
+
+  .rotateimgs {
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+  }
+
+  .rotateimg1 {
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+    /* Rotate continuously */
+
+  }
+
+  .herotitle {
+    font-size: 10vw;
+    /* color: white; */
+    line-height: 5vw;
+
+  }
+
+  .typewritter {
+    font-size: 4.5vw;
+  }
+
+  .typewritter2 {
+    font-size: 3.5vw;
+
+  }
+
+  .pingbtn {
+    position: absolute;
+    bottom: 370px !important;
+    right: 10px;
+  }
+
+  .rotateimgs {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+
+  }
+
+  .rotateimg1 {
+    width: 45px;
+    height: 45px;
+  }
+
+  .rotateimg2 {
+    width: 45px;
+    height: 45px;
+  }
+
+  .heromarqee {
+    z-index: -3;
+    bottom: 50px;
+    line-height: 40px;
+    opacity: 1;
+  }
+
+  .heromarqee h1 {
+    font-size: 25vw;
+  }
+}
+
+
+
+
+
+.marqueetextimg {
+  background-image: url(/images/c.jpg);
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: bottom;
+
+}
+
+.aboutheding {
+  letter-spacing: 2px;
+  line-height: 75px;
+}
+
+.aboutheding2 {
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.aboutmarqeediv {
+  box-shadow: inset 40px 0 90px rgb(0, 0, 0),
+    /* Left inner glow */
+    inset -34px 0 50px rgb(0, 0, 0);
+  /* Right inner glow */
+
+  border: none;
+}
+
+
+
+
+@media (max-width: 640px) {
+  .aboutsectionmain {
+    flex-direction: column;
+    height: 130vh;
+
+  }
+
+  .abconsec {
+    width: 95vw;
+  }
+
+  .ablosec {
+    width: 90vw;
+
+  }
+
+  .lotiabout {
+    width: 90vw;
+    margin-top: 50px;
+  }
+
+  .aboutheding {
+    font-size: 12vw;
+  }
+
+  .careousel {
+    width: 90vw;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .absubheading {
+    font-size: 3vw;
+    margin-top: -13px;
+  }
+
+  .absubheading2 {
+    font-size: 6vw;
+    margin-top:23px;
+  }
+
+  .absubheading2 img {
+    width: 6vw;
+    height: auto;
+  }
+
+  .absubheading3 {
+    font-size: 4vw;
+    margin-top: -1px;
+    margin-bottom: 15px;
+  }
+
+  .anibuton {
+    font-size: 4vw;
+  }
+
+  .aboutmarqueetext {
+    font-size: 8vw;
+  }
+
+  .experience {
+    flex-direction: column;
+    height: 200vh;
+    padding-top: 0px;
+  }
+
+  .experienceleft {
+    width: 90vw;
+    height: 500px;
+  }
+
+  .experienceright {
+    width: 90vw;
+  }
+
+  .experienceheding {
+    font-size: 8vw;
+  }
+
+  .expdate {
+    display: none;
+  }
+
+  .aboutmarqeemain {
+    margin-top: -5px;
+  }
+
+  .textparallex {
+    font-size: 5vw;
   }
 }
 
@@ -180,57 +456,17 @@
 
 
 
-/* 
-.marqueetext {
-  line-height: 10px;
-  
-} */
- .heromarqee{
-  z-index: -3;
-  bottom: 5;
-  line-height: 110px;
-  opacity: 0.5;
- }
-.marqueetextimg{
-  background-image: url(/images/c.jpg);
-  background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.842);
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: bottom;
-  
-}
-/* .skilltext{
-
-line-height: 200px;
-    background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(20px);
-    -webkit-mask: linear-gradient(#000000 0 0), linear-gradient(#000000 0 0);
-    -webkit-mask-clip: text, padding-box;
-    -webkit-mask-composite: xor;
-    padding: 20px;
-    padding-bottom: 60px;
-
-  } */
-.aboutheding{
-  letter-spacing: 2px;
-  line-height: 75px;
-}
-.aboutheding2{
-  letter-spacing: 2px;
-  font-weight:bold;
-}
-
-.aboutmarqeediv {
-  box-shadow: inset 40px 0 90px rgb(0, 0, 0), /* Left inner glow */
-              inset -34px 0 50px rgb(0, 0, 0); /* Right inner glow */
-
-  border: none;            
-}
 
 
 
-.experienceheding{
+
+
+
+
+
+
+
+.experienceheding {
   line-height: 55px;
 }
 
@@ -239,7 +475,7 @@ line-height: 200px;
 
 /* parallex  */
 
-.parallex{
+.parallex {
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -250,13 +486,15 @@ line-height: 200px;
   overflow: hidden;
 
 }
-.textparallex{
+
+.textparallex {
   font-size: 100px;
   color: white;
 
 }
-.mountains{
-  background-image: url(images/mountains.png);
+
+.mountains {
+  background-image: url(/images/mountains.png);
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -264,8 +502,9 @@ line-height: 200px;
   position: absolute;
   z-index: 3;
 }
-.planets{
-  background-image: url(images/planets.png);
+
+.planets {
+  background-image: url(/images/planets.png);
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -273,8 +512,9 @@ line-height: 200px;
   position: absolute;
   z-index: 2;
 }
-.stars{
-  background-image: url(images/stars.png);
+
+.stars {
+  background-image: url(/images/stars.png);
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -316,9 +556,9 @@ line-height: 200px;
 
 /* pulse button  */
 
-.pulse{
-  width: 70px;
-  height: 70px;
+.pulse {
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   background-color: #f3c307;
   position: relative;
@@ -326,7 +566,8 @@ line-height: 200px;
   justify-content: center;
   align-items: center;
 }
-.pulse span{
+
+.pulse span {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -336,8 +577,9 @@ line-height: 200px;
   animation: pulseanimate 4s ease-out infinite;
   animation-delay: calc(1s * var(--i));
 }
-@keyframes pulseanimate{
-  100%{
+
+@keyframes pulseanimate {
+  100% {
     opacity: 0;
     transform: scale(2);
   }
@@ -363,7 +605,8 @@ line-height: 200px;
 }
 
 .boxanimated {
-  width: 100%; /* Matches the grid cell width */
+  width: 100%;
+  /* Matches the grid cell width */
   height: 80px;
   border: 0.5px solid rgba(94, 93, 93, 0.158);
   background-color: #000000;
@@ -374,11 +617,226 @@ line-height: 200px;
   background-color: rgba(94, 93, 93, 0.438);
 }
 
-.sectionbox-content{
+.sectionbox-content {
   position: relative;
   z-index: 2;
   pointer-events: none;
 }
-.pointerevents{
+
+.pointerevents {
   pointer-events: all;
+}
+
+
+
+
+
+
+
+
+
+/* portfolio section starts  */
+.portfolio {
+  position: relative;
+  background-color: black;
+  color: white;
+
+  .progress {
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: #f3c307;
+    font-size: 3vw;
+    background-color: #000000;
+    padding: 10px;
+
+
+    .progressbar {
+
+      height: 3px;
+      background-color: #ffffff;
+      border-radius: 12px;
+    }
+
+  }
+
+}
+
+.portcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.wrapper {
+  max-width: 70vw;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/* img{
+    flex: 1;
+    height: 50%;
+    object-fit: cover;
+  } */
+/* 
+  .textcontainer{
+    flex: 1 ;
+  } */
+
+
+
+
+@media (max-width: 640px) {
+  .textparallex {
+    font-size: 70px;
+    color: white;
+    z-index: 3;
+  }
+
+  .parallex {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+  }
+
+
+  .mountains {
+    background-image: url(images/mountains.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .planets {
+    background-image: url(images/planets.png);
+    background-position: right;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .stars {
+    background-image: url(images/stars.png);
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .linkstechhead {
+    font-size: 10vw;
+  }
+  .boxanimationdiv {
+    padding-top: 0px;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    
+  }
+  .animatedbtnhireme{
+    margin-top: 6px;
+  }
+.dotsectionmain{
+  flex-direction: column;
+}
+.dotsectiondot{
+  width: 90vw;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+.dotsectioncon{
+  width: 90vw;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+.herotitlegarentee{
+  font-size: 8vw;
+  line-height: 30px;
+}
+
+
+
+
+.portfolio {
+  position: relative;
+  background-color: black;
+  color: white;
+
+  .progress {
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: #f3c307;
+    font-size: 10vw;
+    background-color: #000000;
+    padding: 10px;
+    padding-top: 10px;
+
+
+    .progressbar {
+
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 12px;
+    }
+
+  }
+
+}
+
+.portcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.wrapper {
+  max-width: 90vw;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.mainfooter{
+flex-direction: column-reverse;
+width: 100vw;
+}
 }

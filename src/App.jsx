@@ -11,6 +11,11 @@ import About from './components/About'
 import Parallex from './components/Parallex'
 import Experiences from './components/Experiences'
 import { HoverImageLinks } from './components/Linkstechnologies'
+import PortfolioSection from './components/Portfoliosection'
+import Footerform from './components/Footerform'
+import Footer from './components/Bottomfooter'
+import Aboutme from './components/aboutme'
+
 function App() {
   const [count, setCount] = useState(0)
   const locomotiveScroll = new LocomotiveScroll();
@@ -18,13 +23,18 @@ function App() {
     <>
       <Animatedcursor/>
       <Hero />
-      <About/>
+       <About/>
       <Experiences/>
       <Parallex/>
+      <Aboutme/>
       {/* <HoverImageLinks/> */}
         {/* technologies sectio starts  */}
-        <Marquee/>
-      
+        {/* <Marquee/>   */}
+
+        <PortfolioSection/>
+          <Footerform/>
+      <Footer/>
+    
     </>
   )
 }

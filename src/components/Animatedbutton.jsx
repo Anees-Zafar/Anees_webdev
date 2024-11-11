@@ -63,7 +63,7 @@ const EncryptButton = () => {
       }}
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
-      className="group relative overflow-hidden aboutheding2 mt-9 w-[170px]  font-[font7] rounded-2xl border-2 border-dashed border-[#f3c307] bg-black px-6 py-3 font-semibold uppercase text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#f3c307] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+      className="group animatedbtnhireme relative overflow-hidden anibuton aboutheding2 mt-9 w-[170px]  font-[font7] rounded-2xl border-2 border-dashed border-[#f3c307] bg-black px-6 py-3 font-semibold uppercase text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_#f3c307] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
     >
       <div className="relative z-10 flex items-center gap-2">
         <FiLock />

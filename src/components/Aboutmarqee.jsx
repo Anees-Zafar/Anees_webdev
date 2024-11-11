@@ -5,7 +5,7 @@ function Aboutmarqee() {
     return (
         <>
 
-            <div className=' h-[200px] w-full bg-black flex justify-center overflow-hidden relative items-center flex-col  '>
+            <div className=' h-[200px] aboutmarqeemain w-full bg-black flex justify-center overflow-hidden relative items-center flex-col  '>
                 <div className='bg-white  rotate-[3deg] mb-1 overflow-hidden relative'>
                     <motion.div
                         initial={{ x: "-0%" }}

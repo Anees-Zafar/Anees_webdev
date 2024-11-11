@@ -11,7 +11,7 @@ const Hoverimages = () => {
       renderImageBuffer={50}
       rotationRange={25}
       images={[
-        "/images/zafran123.jpg",
+        "https://i2.ppvise.site/gimg/f6c5bc7618.jpg",
         "/images/riceproduct.jpg",
         "/images/pink-salt.jpg",
         "/images/naturalhoney.jpg",
