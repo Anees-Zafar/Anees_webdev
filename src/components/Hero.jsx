@@ -106,8 +106,8 @@ function Hero() {
               </div>
             </div>
             <div className="rotateimgs">
-              <img className="w-[60px] h-[60px] rotateimg1" src="/images/globe-web.jpg" alt="" />
-              <img className="w-[60px] h-[60px] rotateimg2 mt-3" src="/images/web-dev.jpg" alt="" />
+              <img className="w-[60px] h-[60px] rotateimg1" src="images/globe-web.jpg" alt="" />
+              <img className="w-[60px] h-[60px] rotateimg2 mt-3" src="images/web-dev.jpg" alt="" />
 
             </div>
           </div>
