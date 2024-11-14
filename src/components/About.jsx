@@ -41,20 +41,20 @@ function About() {
 
         <div className='flex gap-2 w-full aboutsectionmain   justify-center  items-center h-[100vh] bg-black relative '>
             
-            <div className='w-[35vw] pl-3 abconsec  h-[80vh] pr-10 border-l-[1px] border-solid border-[#f3c4079d]' data-scroll data-scroll-speed=".3">
+            <div className='w-[35vw] pl-3 abconsec  h-[80vh] pr-10 ' data-scroll data-scroll-speed=".3">
                 <BubbleText/>
                 <motion.p
                 whileInView={{opacity:1 , x:0}}
                 initial={{opacity:0 }}
                 transition={{duration:0.2 , delay:0.1}}
-                 className='text-[#ffd630] text-[12px]  font-[font7] aboutheding2 absubheading '>Your Web Development Partner</motion.p>
+                 className='text-[#ffd630] text-[12px] mt-[-10px]  font-[font7] aboutheding2 absubheading '>Your Web Development Partner</motion.p>
 
 
                 <motion.h1 
                whileInView={{opacity:1 , y:0}}
                initial={{opacity:0 , y:50 }}
                transition={{duration:0.2 , delay:0.2}}
-                 className='flex  text-3xl aboutheding2 text-white mt-10 font-[font4] absubheading2'>  Hi <img src={Hand} width="35px" alt="waving hand" />, I'm &nbsp; Anees Zafar</motion.h1>
+                 className='flex  text-3xl aboutheding2 text-white mt-10 font-[font11] absubheading2'>  Hi <img src={Hand} width="35px" alt="waving hand" />, I'm &nbsp; Anees Zafar</motion.h1>
                 <motion.p 
                  whileInView={{opacity:1 , y:0}}
                  initial={{opacity:0 , y:50 }}

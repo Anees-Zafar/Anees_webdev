@@ -21,8 +21,8 @@ function App() {
     const scrollInstance = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
-      multiplier: 0.8, // adjust scroll speed
-      lerp: 0.1, // smoothness
+      multiplier: 3, // adjust scroll speed
+      lerp: 0.15, // smoothness
     });
 
     return () => {
@@ -31,7 +31,9 @@ function App() {
   }, []);
 
   return (
-    <div ref={scrollRef}>
+    <div 
+  
+     ref={scrollRef}>
       <Animatedcursor />
       <Hero />
       <About />
