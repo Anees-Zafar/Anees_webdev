@@ -5,9 +5,9 @@ import { motion } from "framer-motion"
 function Experiences() {
   return (
     <div>
-      <div className="experience w-full gap-7 h-[120vh] bg-black p-10 flex justify-center items-center">
+      <div className="experience w-full gap-7 pt-[100px] h-[120vh] bg-black p-10 md:pt-[10px] flex justify-center items-center">
 
-        <div className="experienceleft w-[30vw]  relative h-[500px] pr-2 ">
+        <div className="experienceleft w-[30vw]  relative h-[600px] md:h-[500px]  pr-2 ">
           <motion.h1
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 50 }}
