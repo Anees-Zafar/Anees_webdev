@@ -46,19 +46,19 @@ function About() {
                 <motion.p
                 whileInView={{opacity:1 , x:0}}
                 initial={{opacity:0 }}
-                transition={{duration:0.2 , delay:0.1}}
+                transition={{duration:0.5 , delay:0.1}}
                  className='text-[#ffd630] text-[12px] mt-[-10px]  font-[font7] aboutheding2 absubheading '>Your Web Development Partner</motion.p>
 
 
                 <motion.h1 
-               whileInView={{opacity:1 , y:0}}
-               initial={{opacity:0 , y:50 }}
-               transition={{duration:0.2 , delay:0.2}}
+               whileInView={{opacity:1 , x:0}}
+               initial={{opacity:0 , x:-100 }}
+               transition={{duration:0.5 , delay:0.2}}
                  className='flex  text-3xl aboutheding2 text-white mt-10 font-[font11] absubheading2'>  Hi <img src={Hand} width="35px" alt="waving hand" />, I'm &nbsp; Anees Zafar</motion.h1>
                 <motion.p 
-                 whileInView={{opacity:1 , y:0}}
-                 initial={{opacity:0 , y:50 }}
-                 transition={{duration:0.4 , delay:0.4}}
+                 whileInView={{opacity:1 , x:0}}
+                 initial={{opacity:0 , x:-100 }}
+                 transition={{duration:0.5 , delay:0.3}}
                 className='text-zinc-300 leading-6 mt-4  text-md absubheading3'>
                     I'm a passionate web developer dedicated to building functional, user-friendly, and visually
                      appealing web applications. With expertise in both front-end and back-end development,
