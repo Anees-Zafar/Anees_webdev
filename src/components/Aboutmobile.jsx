@@ -32,12 +32,12 @@ function Aboutmobile() {
           </div>
 
           {/* first section starts  */}
-          <div className='dotsectionmain1  bg-black overflow-hidden   m-0'>
+          <div className='h-[80vh] bg-black overflow-hidden   m-0'>
 
-            <div className='dotsectionmain flex gap-2 w-[100vw] justify-center items-center  relative  '>
+            <div className='dotsectionmain flex gap-2 w-[100vw] justify-center items-center  relative h-fit   '>
 
 
-              <div className='dotsectioncon w-[50vw] pl-3 z-20 pointer-events-none absolute left-[250px] top-[70px]  pt-10  '>
+              <div className='dotsectioncon w-[50vw] pl-3 z-20 pointer-events-none absolute left-[250px] top-[70px]  h-fit pt-10  '>
 
 
 
