@@ -12,6 +12,7 @@ import PortfolioSection from './components/PortfolioSection';
 import Footerform from './components/Footerform';
 import Footer from './components/Bottomfooter';
 import Aboutme from './components/aboutme';
+import Aboutmobile from './components/Aboutmobile';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,6 +41,7 @@ function App() {
       <Experiences />
       <Parallex />
       <Aboutme/>
+      <Aboutmobile/>
       <PortfolioSection />
       <Footerform />
       <Footer />

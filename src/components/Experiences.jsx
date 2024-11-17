@@ -21,7 +21,7 @@ function Experiences() {
             <ButtonWrapper className="mt-5" />
           </div>
           <div className="experienceimg float-right absolute bottom-0 right-5" data-scroll data-scroll-speed=".3">
-            <img className='w-[300px] opacity-[0.5] z-[-2]' src="images/services.png" alt="" />
+            <img className='w-[300px] md:opacity-[0.5] opacity-[0.2] z-[-2]' src="images/services.png" alt="" />
           </div>
         </div>
         <div className="experienceright w-[40vw] ">

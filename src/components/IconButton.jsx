@@ -7,14 +7,14 @@ export default function IconButton({ children, text, color, ...props }) {
         <button
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-            className={`flex px-1.5 py-1 items-center rounded-lg text-black ${color || "bg-white"}`}
+            className={`flex px-1   md:px-1.5 md:py-1 py-0.5  items-center rounded-lg text-black ${color || "bg-white"}`}
 
             {...props}>
             {children}
             <div
                 style={{ width: hovered ? ref.current?.offsetWidth || 0 : 0 }}
                 className="overflow-x-hidden transition-all duration-300 ease-out">
-                <span ref={ref} className="px-1.5">{text}</span>
+                <span ref={ref} className=" px-1   md:px-1.5">{text}</span>
             </div>
         </button>
     )

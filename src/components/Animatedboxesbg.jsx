@@ -14,7 +14,7 @@ const BoxGridanimated = () => {
     };
     return (
         <>
-            <div className='w-[100vw] h-[100vh] relative pt-10 boxanimationdiv '>
+            <div className='w-[100vw] h-[100vh] relative pt-10  boxanimationdiv '>
                 <div className="box-gridanimated absolute  ">
                     {boxArray.map((_, index) => (
                         <div key={index}

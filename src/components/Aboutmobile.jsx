@@ -1,9 +1,8 @@
-import React, { useRef } from 'react';
-import BubbleText from './Aboutheading';
+import React from 'react';
+
 
 import "react-multi-carousel/lib/styles.css";
-import Hand from '../assets/Hand.gif';
-import Button from './Animatedbutton';
+
 import { motion, useTransform, useScroll } from "framer-motion";
 import { HoverImageLinks } from './Linkstechnologies';
 import BoxGridanimated from './Animatedboxesbg';
@@ -11,32 +10,18 @@ import anime from "animejs";
 
 
 
-function Aboutme() {
+function Aboutmobile() {
 
 
 
-
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({ target: targetRef });
-
-  // Adjust the transformation values for smoother scrolling
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-67%"]);
-
-
-  const responsive = {
-    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 4, slidesToSlide: 1 },
-    tablet: { breakpoint: { max: 1024, min: 464 }, items: 2, slidesToSlide: 2 },
-    mobile: { breakpoint: { max: 464, min: 0 }, items: 1, slidesToSlide: 1 }
-  };
 
   return (
 
-    <section ref={targetRef} className="relative aboutdesktop  h-[300vh] md:h-[900vh] bg-black">
-      <div className="sticky top-0 flex items-center overflow-hidden bg-black h-[100vh]">
+    <section className="relative h-fit aboutmobile md:hidden  bg-black">
+
         <motion.div
-          style={{ x }}
-          transition={{ type: "keyframes", duration: 1 }}
-          className='flex relative' >
+    
+          className=' relative' >
 
           <div className='overflow-y-visible '>
             <HoverImageLinks />
@@ -47,12 +32,12 @@ function Aboutme() {
           </div>
 
           {/* first section starts  */}
-          <div className='h-screen  bg-black   m-0'>
+          <div className='dotsectionmain1  bg-black overflow-hidden   m-0'>
 
-            <div className='dotsectionmain flex gap-2 w-[100vw] justify-center items-center  relative h-[100vh]   '>
+            <div className='dotsectionmain flex gap-2 w-[100vw] justify-center items-center  relative  '>
 
 
-              <div className='dotsectioncon w-[50vw] pl-3 z-20 pointer-events-none absolute left-[250px] top-[70px]  h-[80vh] pt-10  '>
+              <div className='dotsectioncon w-[50vw] pl-3 z-20 pointer-events-none absolute left-[250px] top-[70px]  pt-10  '>
 
 
 
@@ -96,12 +81,12 @@ function Aboutme() {
 
 
         </motion.div>
-      </div>
+   
     </section>
   );
 }
 
-export default Aboutme;
+export default Aboutmobile;
 const GRID_WIDTH = 25;
 const GRID_HEIGHT = 20;
 

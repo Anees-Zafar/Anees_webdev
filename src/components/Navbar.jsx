@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <div className={`navbarhead ${isVisible ? 'visible' : 'hidden'} ${isScrolled ? 'scrolled' : ''}`}>
       <img className='logoimg ' src="images/anes-logo.png" alt="" />
-      <div className="socialicons flex items-center justify-center gap-4">
+      <div className="socialicons flex items-center justify-center gap-3 md:gap-4">
         <IconButton text="Github" ><FaGithub size={20} /></IconButton>
         <IconButton text="Facebook" ><FaFacebook size={20} /></IconButton>
         <IconButton text="Whatsapp" ><FaWhatsapp size={20} /></IconButton>
