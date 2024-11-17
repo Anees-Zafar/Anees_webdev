@@ -757,6 +757,7 @@
     width: 100vw;
     height: 100vh;
     margin-top: 0;
+    position: relative;
     
   }
   .animatedbtnhireme{
@@ -766,7 +767,7 @@
   flex-direction: column;
 }
 .dotsectionmain1{
-  height: fit-content;
+  height:80vh;
 }
 
 .dotsectiondot{

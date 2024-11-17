@@ -17,7 +17,7 @@ function Aboutmobile() {
 
   return (
 
-    <section className="relative h-fit aboutmobile md:hidden  bg-black">
+    <section className="relative  aboutmobile md:hidden overflow-hidden bg-black">
 
         <motion.div
     
