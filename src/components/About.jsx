@@ -39,9 +39,9 @@ function About() {
          </div>
 
 
-        <div className='flex gap-2 w-full aboutsectionmain   justify-center  items-center h-[100vh] bg-black relative '>
+        <div className='flex gap-0 md:gap-2 w-full aboutsectionmain pt-[100px] md:pt-[10px]   justify-center  items-center h-[100vh] bg-black relative '>
             
-            <div className='w-[35vw] pl-3 abconsec  h-[80vh] pr-10 ' >
+            <div className='w-[35vw] pl-3 abconsec h-[60vh]  md:h-[80vh] pr-10 ' >
                 <BubbleText/>
                 <motion.p
                 whileInView={{opacity:1 , x:0}}
@@ -70,7 +70,7 @@ function About() {
             </div>
             <div 
        
-            className='w-[35vw] h-[80vh] relative ablosec  p-0 ' data-scroll data-scroll-speed="-.1">
+            className='w-[35vw] h-[80vh] relative ablosec  p-0 ' >
                 <Lottie  className='mt-[-60px] lotiabout w-[40vw] '  animationData={Aboutlottie} />
 
                 <Carousel

@@ -32,7 +32,7 @@ function Aboutmobile() {
           </div>
 
           {/* first section starts  */}
-          <div className='h-[100vh] bg-black overflow-hidden   m-0'>
+          <div className='h-[100vh] bg-black overflow-hidden mt-[100px]   m-0'>
 
             <div className='dotsectionmain flex gap-2 w-[100vw] justify-center items-center  relative h-fit   '>
 
