@@ -15,26 +15,26 @@ import Aboutme from './components/aboutme';
 import Aboutmobile from './components/Aboutmobile';
 
 function App() {
-  const [count, setCount] = useState(0);
-  const scrollRef = useRef(null);
+  // const [count, setCount] = useState(0);
+  // const scrollRef = useRef(null);
 
-  useEffect(() => {
-    const scrollInstance = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      multiplier: 3, // adjust scroll speed
-      lerp: 0.55, // smoothness
-    });
+  // useEffect(() => {
+  //   const scrollInstance = new LocomotiveScroll({
+  //     el: scrollRef.current,
+  //     smooth: true,
+  //     multiplier: 3, // adjust scroll speed
+  //     lerp: 0.55, // smoothness
+  //   });
 
-    return () => {
-      scrollInstance.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     scrollInstance.destroy();
+  //   };
+  // }, []);
 
   return (
     <div 
   
-     ref={scrollRef} >
+   >
       <Animatedcursor />
       <Hero />
       <About />

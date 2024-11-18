@@ -17,7 +17,7 @@ function Aboutmobile() {
 
   return (
 
-    <section className="relative  aboutmobile md:hidden overflow-hidden bg-black">
+    <section className="relative aboutmobile md:hidden overflow-hidden bg-black">
 
         <motion.div
     
@@ -27,12 +27,12 @@ function Aboutmobile() {
             <HoverImageLinks />
           </div>
 
-          <div className='w-[100vw]'>
+          <div className='w-[100vw] h-[100vh]'>
             <BoxGridanimated />
           </div>
 
           {/* first section starts  */}
-          <div className='h-[80vh] bg-black overflow-hidden   m-0'>
+          <div className='h-[100vh] bg-black overflow-hidden   m-0'>
 
             <div className='dotsectionmain flex gap-2 w-[100vw] justify-center items-center  relative h-fit   '>
 

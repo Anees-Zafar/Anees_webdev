@@ -41,7 +41,7 @@ function About() {
 
         <div className='flex gap-2 w-full aboutsectionmain   justify-center  items-center h-[100vh] bg-black relative '>
             
-            <div className='w-[35vw] pl-3 abconsec  h-[80vh] pr-10 ' data-scroll data-scroll-speed=".3">
+            <div className='w-[35vw] pl-3 abconsec  h-[80vh] pr-10 ' >
                 <BubbleText/>
                 <motion.p
                 whileInView={{opacity:1 , x:0}}
